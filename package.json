@@ -1,0 +1,42 @@
+{
+  "name": "chatgpt",
+  "version": "0.1.0",
+  "description": "Handler?",
+  "main": "./dist/index.js",
+  "author": "Rechz <demonlscrazy334@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "nodemon",
+    "prod": "tsc && node ."
+  },
+  "dependencies": {
+    "chalk": "4.1.2",
+    "discord.js": "^14.7.1",
+    "moment-timezone": "^0.5.34",
+    "openai": "^3.2.1",
+    "pretty-ms": "7.0.1",
+    "typeorm": "^0.3.12"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.2.0",
+    "@typescript-eslint/eslint-plugin": "^5.12.1",
+    "@typescript-eslint/parser": "^5.12.1",
+    "dotenv": "^16.0.0",
+    "eslint": "^8.10.0",
+    "typescript": "^4.5.5"
+  },
+  "resolutions": {
+    "discord-api-types": "0.37.20"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "dist/*"
+    ],
+    "ext": "ts",
+    "watch": [
+      "src/*"
+    ],
+    "exec": "rimraf dist && tsc && node ."
+  }
+}

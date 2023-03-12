@@ -1,0 +1,22 @@
+{
+	"Event Structure": {
+		"scope": "typescript",
+		"prefix": "eventStructure",
+		"body": [
+			"import Bot from '../../structures/client';",
+			"import Event from '../../structures/event';\n",
+			"class $1 extends Event {",
+			"\tconstructor(client: Bot) {",
+			"\t\tsuper(client, {",
+			"\t\t\tname: '$2',",
+			"\t\t\temiter: '$3'",
+			"\t\t});",
+			"\t}\n",
+			"\tasync run(...args: any): Promise<void> {",
+			"\t\treturn;",
+			"\t}",
+			"}\n",
+			"export default $1;"
+		]
+	}
+}
